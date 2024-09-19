@@ -46,6 +46,7 @@ public class excersice1 {
         File file3 = new File("./src/file/EX3/child2/input.txt");
         File file4 = new File("./src/file/EX3/child2/output.txt");
 
+
         folder1.mkdirs();
         folder2.mkdirs();
         file1.createNewFile();
