@@ -47,15 +47,15 @@ public class excersice1 {
         File file4 = new File("./src/file/EX3/child2/output.txt");
 
 
-        folder1.mkdirs();
-        folder2.mkdirs();
-        file1.createNewFile();
-        file2.createNewFile();
-        file3.createNewFile();
-        file4.createNewFile();
+//        folder1.mkdirs();
+//        folder2.mkdirs();
+//        file1.createNewFile();
+//        file2.createNewFile();
+//        file3.createNewFile();
+//        file4.createNewFile();
 //        DELETE FOLDER TREE !
         System.out.println(delete("./src/file/EX3"));
-        System.out.println(deleteChild("./src/file/EX3"));
+//        System.out.println(deleteChild("./src/file/EX3"));
 
  }
 }
