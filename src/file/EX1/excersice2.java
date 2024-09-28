@@ -6,21 +6,21 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class excersice2 {
-    public static void printLevel (int level) {
-        for (int i =0 ; i < level ; i++) {
-            System.out.print("| ");
-        }
-    }
+
     public static void PrintDirTree(String path , int level) {
         File folder = new File(path);
         if (folder.isDirectory()) {
-            printLevel(level);
+            for (int i =0 ; i < level ; i++) {
+                System.out.print("| ");
+            }
             System.out.println(folder.getName().toUpperCase());
             level++;
 
             for (File f: Objects.requireNonNull(folder.listFiles())) {
                 if (f.isFile()) {
-                    printLevel(level);
+                    for (int i =0 ; i < level ; i++) {
+                        System.out.print("| ");
+                    }
                     System.out.println("+-"+f.getName());
                 }
 
@@ -50,6 +50,6 @@ public class excersice2 {
 //        file2.createNewFile();
 //        file3.createNewFile();
 //        file4.createNewFile();
-        PrintDirTree("./src/file/EX3",0);
+        PrintDirTree(".\\src\\file",0);
     }
 }
